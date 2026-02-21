@@ -2,22 +2,16 @@
   subject: 數學
   area: 沙田
   price: 250
-  bio: 10 年經驗，專攻中學數學。
+  bio: 10 年經驗，專攻中學數學。DSE 滿分導師。
+  level: 中學  <!-- 新加年級 -->
+  rating: 4.8  <!-- 新加評價 -->
 
 - name: 老師 B
   subject: 英文
   area: 尖沙咀
   price: 300
-  bio: 母語英文老師，專注會話和寫作。
+  bio: 母語英文老師，專注會話和寫作。小學至成人。
+  level: 小學/成人
+  rating: 4.9
 
-- name: 老師 C
-  subject: 中文
-  area: 中環
-  price: 180
-  bio: 專攻小學中文，趣味教學。
-
-- name: 老師 D
-  subject: 物理
-  area: 九龍塘
-  price: 450
-  bio: 大學物理系畢業，專攻高中物理。
+# 加更多導師，豐富列表
