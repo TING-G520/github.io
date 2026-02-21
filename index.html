@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<h2>歡迎來到香港補習中介平台</h2>
+<p>這裡你可以找到不同科目、地區的補習老師。使用下方過濾器選擇。</p>
+
+<div id="filters">
+    <label>科目：</label>
+    <select id="subject-filter">
+        <option value="">全部</option>
+        <option value="數學">數學</option>
+        <option value="英文">英文</option>
+        <option value="中文">中文</option>
+        <option value="物理">物理</option>
+    </select>
+
+    <label>地區：</label>
+    <select id="area-filter">
+        <option value="">全部</option>
+        <option value="沙田">沙田</option>
+        <option value="尖沙咀">尖沙咀</option>
+        <option value="中環">中環</option>
+        <option value="九龍塘">九龍塘</option>
+    </select>
+
+    <label>價格（每小時）：</label>
+    <select id="price-filter">
+        <option value="">全部</option>
+        <option value="low">低於 $200</option>
+        <option value="medium">$200 - $400</option>
+        <option value="high">高於 $400</option>
+    </select>
+
+    <button onclick="filterTutors()">過濾</button>
+</div>
+
+<div id="tutor-list">
+    {% for tutor in site.data.tutors %}
+    <div class="tutor-card" data-subject="{{ tutor.subject }}" data-area="{{ tutor.area }}" data-price="{{ tutor.price }}">
+        <h3>{{ tutor.name }}</h3>
+        <p>科目：{{ tutor.subject }}</p>
+        <p>地區：{{ tutor.area }}</p>
+        <p>價格：${{ tutor.price }} / 小時</p>
+        <p>簡介：{{ tutor.bio }}</p>
+    </div>
+    {% endfor %}
+</div>
