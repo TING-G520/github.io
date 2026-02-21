@@ -1,2 +1,6 @@
 title: 香港補習中介平台
 description: 連接香港學生與優質補習老師
+collections:
+  tutors:
+    output: true  # 自動生成頁面
+    permalink: /tutor/:name  # URL 如 /tutor/老師A
