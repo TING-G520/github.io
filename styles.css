@@ -1,5 +1,6 @@
 body { font-family: Arial, sans-serif; margin: 20px; }
 header { text-align: center; }
-.tutor-card { border: 1px solid #ccc; padding: 10px; margin: 10px; width: 300px; display: inline-block; }
-#filters { margin-bottom: 20px; }
-#filters select, button { margin-right: 10px; }
+.tutor-card { border: 1px solid #ccc; padding: 15px; margin: 15px; width: 300px; display: inline-block; background: #f9f9f9; }
+#search-bar { margin-bottom: 10px; }
+#search-bar input { width: 300px; padding: 8px; }
+#filters select, button { margin: 5px; padding: 8px; }
